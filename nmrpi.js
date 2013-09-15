@@ -1,5 +1,4 @@
-var io = require('socket.io')
-  , ss = require('socket.io-stream')
+var ss = require('socket.io-stream')
   , path = require('path')
   , fs = require('fs')
   , brain = require('./brain.js');
@@ -7,9 +6,7 @@ var io = require('socket.io')
 
 
 var start = function (config) {
-  console.log(config.port);
-  io.listen(config.port);
-
+  var io = require('socket.io').listen(config.port);
 
   io.sockets.on('connection', function (socket) {
 
@@ -46,6 +43,11 @@ module.exports = {
 
 
 
+var config = {
+  port: 8080,
+  folderPath: __dirname + 'nmrcontrollers'
+};
 
+start(config);
 
 
