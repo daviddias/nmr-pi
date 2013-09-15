@@ -1,8 +1,8 @@
 {
-  "name": "node-my-ride-pi",
+  "name": "nmr-pi",
   "version": "0.0.0",
   "description": "node-my-ride-pi ===============",
-  "main": "server.js",
+  "main": "nmrpi.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,7 +27,6 @@
     "url": "https://github.com/diasdavid/node-my-ride-pi/issues"
   },
   "dependencies": {
-    "restify": "~2.6.0",
     "johnny-five": "~0.7.2",
     "socket.io": "~0.9.16",
     "socket.io-stream": "~0.3.1"
