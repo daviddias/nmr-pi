@@ -22,6 +22,9 @@ var addController = function (path) {
 var execute = function(controllerID, functionName) {
   console.log(controllerID, functionName);
 
+  console.log(controllers[controllerID]);
+  console.log(controllers[controllerID][functionName]);
+
   controllers[controllerID][functionName]();
 };
 
