@@ -12,6 +12,8 @@ var controllers = {};
 var addController = function (path) {
   // 1. Require the controller
   var controller = require(path)(five);
+  console.log('new controller added');
+  console.log(controller);
 
   // 2. Add the controller to controller list
   controllers[controller.id] = controller;
