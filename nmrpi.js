@@ -7,6 +7,7 @@ var io = require('socket.io')
 
 
 var start = function (config) {
+  console.log(config.port);
   io.listen(config.port);
 
 
