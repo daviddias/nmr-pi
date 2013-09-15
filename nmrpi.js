@@ -40,14 +40,3 @@ var start = function (config) {
 module.exports = {
   start: start
 };
-
-
-
-var config = {
-  port: 8080,
-  folderPath: __dirname + 'nmrcontrollers'
-};
-
-start(config);
-
-
