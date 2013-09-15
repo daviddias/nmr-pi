@@ -11,7 +11,7 @@ var controllers = {};
 
 var addController = function (path) {
   // 1. Require the controller
-  var controller = require(path);
+  var controller = require(path)(five);
 
   // 2. Add the controller to controller list
   controllers[controller.id] = controller;
@@ -31,5 +31,5 @@ var execute = function(controllerID, functionName) {
 module.exports = {
   addController: addController,
   execute: execute,
-  board: board
+  board: board,
 };

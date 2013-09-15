@@ -38,5 +38,5 @@ var start = function (config) {
 
 
 module.exports = {
-  start: start
+  start: start,
 };
